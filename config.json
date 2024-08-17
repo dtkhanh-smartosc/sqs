@@ -1,13 +1,13 @@
 {
     "debug": true,
-    "server-address": ":9092",
+    "server-address": ":5000",
     "logger-filename": "sqs.log",
     "logger-is-production": true,
     "logger-level": "info",
-    "grpc-tendermint-rpc-endpoint": "http://localhost:26657",
-    "grpc-gateway-endpoint": "localhost:9090",
-    "chain-id": "osmosis-1",
-    "chain-registry-assets-url": "https://raw.githubusercontent.com/osmosis-labs/assetlists/main/osmosis-1/generated/frontend/assetlist.json",
+    "grpc-tendermint-rpc-endpoint": "http://localhost:26658",
+    "grpc-gateway-endpoint": "localhost:9094",
+    "chain-id": "localosmosis",
+    "chain-registry-assets-url": "https://raw.githubusercontent.com/dtkhanh-smartosc/sqs/v25.x/token.json",
     "update-assets-height-interval": 200,
     "router": {
       "preferred-pool-ids": [],
@@ -46,21 +46,7 @@
           "trace-threshold-ms": 1000,
           "trace-file-name": "/tmp/sqs-flight-record.trace"
     },
-    "pools": {
-        "transmuter-code-ids": [
-            148,
-            254
-        ],
-        "alloyed-transmuter-code-ids": [814, 867],
-        "orderbook-code-ids": [885],
-        "general-cosmwasm-code-ids": [
-            503,
-            572,
-            773,
-            641,
-            842
-        ]
-    },
+    "pools": {},
     "pricing":{
         "cache-expiry-ms": 2000,
         "default-source": 0,
