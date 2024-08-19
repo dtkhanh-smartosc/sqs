@@ -432,7 +432,7 @@ func (s *PoolLiquidityComputeWorkerSuite) TestPriceBalances() {
 	for _, tc := range tests {
 		tc := tc
 
-		s.T().Run("", func(t *testing.T) {
+		s.T().Run(tc.name, func(t *testing.T) {
 
 			scalingFactorGetterMock := mocks.SetupMockScalingFactorCbFromMap(tc.preSetScalingFactorMap)
 
