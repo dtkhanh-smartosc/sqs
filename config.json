@@ -1,6 +1,6 @@
 {
     "debug": true,
-    "server-address": ":5000",
+    "server-address": ":9092",
     "logger-filename": "sqs.log",
     "logger-is-production": true,
     "logger-level": "info",
